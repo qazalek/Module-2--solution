@@ -1,0 +1,109 @@
+/* Default styles for all screen sizes */
+* {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  section {
+    position: relative;
+    padding: 15px;
+    width: 90%;
+  }
+  p {
+    position: relative;
+    clear: right;
+  }
+
+div {
+    position: relative;
+    background-color: gray;
+    border: 3.5px solid black;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+
+.s1 {
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: -3px -3px 0px;
+    border: 3.5px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    background-color: #be878f;
+
+  }
+
+.s2 {
+    float: right;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    margin: -3px -3px 0px;
+    border: 3.5px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    background-color: #693737;
+
+  }
+
+.s3 {
+    color: black;
+    float: right;
+    width: 100px;
+    padding: 5px;
+     margin: -3px -3px 0px;
+    border: 3.5px solid black;
+    text-align: center;
+    font-size: 125%;
+    font-weight: bold;
+    background-color: rgb(182, 176, 128);
+
+  }
+
+.content {
+    padding: 5px;
+    border: none;
+    background-color: gray;
+    font-family: Helvetica;
+    color: black;
+    margin: 3px ;
+    height: 150px;
+    overflow: auto;
+  }
+  
+  /* Styles for desktop view */
+  @media screen and (min-width: 992px) {
+    .section1, .section2, .section3 {
+      width: 33.33%;
+      float: left;
+    }
+  }
+  
+  /* Styles for tablet view */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .section1, .section2 {
+      width: 50%;
+      float: left;
+    }
+    .section3 {
+      width: 100%;
+      clear: both;
+    }
+  }
+  
+  /* Styles for mobile view */
+  @media screen and (max-width: 767px) {
+    .section1, .section2, .section3 {
+      width: 100%;
+      float: none;
+    }
+  }
+  
